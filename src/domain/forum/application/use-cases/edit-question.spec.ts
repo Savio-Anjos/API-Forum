@@ -33,7 +33,7 @@ describe("Edit Question", () => {
     });
   });
 
-  it("should be able to edit a question from another user", async () => {
+  it("should not be able to edit a question from another user", async () => {
     const newQuestion = makeQuestion(
       { authorId: new UniqueEntityID("author-1") },
       new UniqueEntityID("question-1")
