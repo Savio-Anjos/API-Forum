@@ -1,5 +1,3 @@
-import { QuestionsRepository } from "../repositories/question-repository";
-import { Question } from "../../enterprise/entities/question";
 import { AnswersRepository } from "../repositories/answers-repository";
 import { Answer } from "../../enterprise/entities/answer";
 
