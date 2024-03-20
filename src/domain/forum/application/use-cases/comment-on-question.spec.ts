@@ -23,8 +23,6 @@ describe("Comment on Question", () => {
   it("should be able to comment on question", async () => {
     const question = makeQuestion();
 
-    makeAnswer({ questionId: question.id });
-
     await inMemoryQuestionsRepository.create(question);
 
     await sut.execute({
