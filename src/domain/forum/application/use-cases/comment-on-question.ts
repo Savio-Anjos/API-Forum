@@ -13,7 +13,7 @@ interface CommentOnQuestionUseCaseResponse {
   questionComment: QuestionComment;
 }
 
-export class CcommentOnQuestionUseCase {
+export class CommentOnQuestionUseCase {
   constructor(
     private questionsRepository: QuestionsRepository,
     private questionsCommentRepository: QuestionCommentsRepository
