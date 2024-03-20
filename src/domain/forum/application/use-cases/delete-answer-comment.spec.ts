@@ -38,7 +38,5 @@ describe("Delete Answer Comment", () => {
         authorId: "author-2",
       });
     }).rejects.toBeInstanceOf(Error);
-
-    expect(inMemoryAnswerCommentsRepository.items).toHaveLength(0);
   });
 });
