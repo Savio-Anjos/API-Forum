@@ -3,7 +3,7 @@ import { QuestionsRepository } from "../repositories/question-repository";
 import { QuestionComment } from "../../enterprise/entities/question-comment";
 import { QuestionCommentsRepository } from "../repositories/question-comments-repository";
 
-interface CommentOnQuestion {
+interface CommentOnQuestionRequest {
   authorId: string;
   questionId: string;
   content: string;
@@ -22,7 +22,7 @@ export class CommentOnQuestionUseCase {
     authorId,
     questionId,
     content,
-  }: CommentOnQuestion): Promise<CommentOnQuestionUseCaseResponse> {
+  }: CommentOnQuestionRequest): Promise<CommentOnQuestionUseCaseResponse> {
     const question = await this.questionsRepository.findById(questionId);
 
     if (!question) {
